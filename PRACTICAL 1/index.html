@@ -9,14 +9,51 @@
 </head>
 <body>
     <div class="container">
-        <h1>Vote For Your Favourite Language</h1>
-        <button onclick="votes('Javascript')">Javascript</button>
-        <button onclick="votes('Python')">Python</button>
-        <button onclick="votes('Java')">Java</button>
-        <h2>Results:</h2>
-        <p>Javascript <span id="jsvotes">0</span> votes</p>
-        <p>Python <span id="pyvotes">0</span> votes</p>
-        <p>Java <span id="jvotes">0</span> votes</p>
+        <h1>🗳️ Vote For Your Favourite Language</h1>
+        <div class="voting-section">
+            <button class="vote-btn js-btn" onclick="votes('Javascript')">
+                <span class="btn-icon">📜</span>
+                <span class="btn-text">Javascript</span>
+            </button>
+            <button class="vote-btn py-btn" onclick="votes('Python')">
+                <span class="btn-icon">🐍</span>
+                <span class="btn-text">Python</span>
+            </button>
+            <button class="vote-btn java-btn" onclick="votes('Java')">
+                <span class="btn-icon">☕</span>
+                <span class="btn-text">Java</span>
+            </button>
+        </div>
+        <div class="results-section">
+            <h2>📊 Live Results</h2>
+            <div class="result-item">
+                <div class="result-header">
+                    <span class="lang-name">📜 Javascript</span>
+                    <span class="vote-count" id="jsvotes">0</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill js-progress" id="js-progress"></div>
+                </div>
+            </div>
+            <div class="result-item">
+                <div class="result-header">
+                    <span class="lang-name">🐍 Python</span>
+                    <span class="vote-count" id="pyvotes">0</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill py-progress" id="py-progress"></div>
+                </div>
+            </div>
+            <div class="result-item">
+                <div class="result-header">
+                    <span class="lang-name">☕ Java</span>
+                    <span class="vote-count" id="jvotes">0</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill java-progress" id="java-progress"></div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

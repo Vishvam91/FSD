@@ -8,9 +8,29 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Weather App</h1>
-    <input type="text" id="inputCity" placeholder="Enter City Name: ">
-    <button id="getWeather">Get Weather Result</button>
-    <p id="result"></p>
+    <div class="container">
+        <div class="weather-card">
+            <h1>🌤️ Weather App</h1>
+            <p class="subtitle">Check weather for Gujarat cities</p>
+            
+            <div class="search-section">
+                <input type="text" id="inputCity" placeholder="Enter city name...">
+                <button id="getWeather">Get Weather</button>
+            </div>
+            
+            <div id="result" class="result-section"></div>
+            
+            <div class="cities-section">
+                <h3>Available Cities:</h3>
+                <div class="city-buttons">
+                    <button class="city-btn" onclick="selectCity('Vadodara')">Vadodara</button>
+                    <button class="city-btn" onclick="selectCity('Ahemdabad')">Ahmedabad</button>
+                    <button class="city-btn" onclick="selectCity('Nadiad')">Nadiad</button>
+                    <button class="city-btn" onclick="selectCity('Rajkot')">Rajkot</button>
+                    <button class="city-btn" onclick="selectCity('Surat')">Surat</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

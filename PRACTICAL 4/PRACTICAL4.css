@@ -1,95 +1,154 @@
-/* HookComponent.css */
-
-div {
-  max-width: 400px;
-  margin: 40px auto;
-  padding: 30px 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #ffffff;
-  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 h1 {
-  font-size: 3rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h2 {
+  color: #34495e;
+  font-size: 24px;
   margin-bottom: 20px;
-  color: #ffeaa7;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  font-weight: 500;
+}
+
+.counter-section {
+  margin-bottom: 40px;
+  text-align: center;
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 4px solid #3498db;
+}
+
+.buttons {
+  margin-top: 20px;
 }
 
 button {
-  border: none;
   color: white;
-  padding: 10px 18px;
-  margin: 5px 8px;
-  font-size: 1rem;
-  border-radius: 10px;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 8px 8px 0;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+button:nth-child(1) {
+  background-color: #27ae60;
+}
+
+button:nth-child(1):hover {
+  background-color: #219a52;
+}
+
+button:nth-child(2) {
+  background-color: #e74c3c;
+}
+
+button:nth-child(2):hover {
+  background-color: #c0392b;
+}
+
+button:nth-child(3) {
+  background-color: #f39c12;
+}
+
+button:nth-child(3):hover {
+  background-color: #d68910;
+}
+
+button:nth-child(4) {
+  background-color: #9b59b6;
+}
+
+button:nth-child(4):hover {
+  background-color: #8e44ad;
+}
+
+.form-section {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 4px solid #e67e22;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2c3e50;
   font-weight: 600;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
-}
-
-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-}
-
-/* Different colors for each button */
-button:nth-of-type(1) {
-  background: linear-gradient(135deg, #ff7675 0%, #d63031 100%);
-}
-button:nth-of-type(1):hover {
-  background: linear-gradient(135deg, #d63031 0%, #ff7675 100%);
-}
-
-button:nth-of-type(2) {
-  background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);
-}
-button:nth-of-type(2):hover {
-  background: linear-gradient(135deg, #e84393 0%, #fd79a8 100%);
-}
-
-button:nth-of-type(3) {
-  background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%);
-}
-button:nth-of-type(3):hover {
-  background: linear-gradient(135deg, #e17055 0%, #fdcb6e 100%);
-}
-
-button:nth-of-type(4) {
-  background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
-}
-button:nth-of-type(4):hover {
-  background: linear-gradient(135deg, #00cec9 0%, #00b894 100%);
+  font-size: 14px;
 }
 
 input {
-  width: 80%;
-  padding: 10px 14px;
-  font-size: 1.1rem;
-  border-radius: 12px;
-  border: 2.5px solid #ffeaa7;
-  margin-bottom: 20px;
-  outline: none;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: inset 0 1px 3px rgba(255, 234, 167, 0.3);
-  color: #2d3436;
-  font-weight: 600;
-  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
 }
 
 input:focus {
-  border-color: #fd79a8;
-  box-shadow: 0 0 8px rgba(253, 121, 168, 0.5);
-  color: #2d3436;
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
 }
 
-h3 {
-  font-weight: 700;
-  color: #ddd;
-  margin: 10px 0 5px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+.output {
+  margin-top: 25px;
+  padding: 20px;
+  background: linear-gradient(135deg, #74b9ff, #0984e3);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.output p {
+  margin: 0;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 10px;
+    padding: 25px;
+  }
+  
+  button {
+    margin: 5px 2px;
+    padding: 8px 15px;
+  }
+  
+  .counter-section, .form-section {
+    padding: 20px;
+  }
 }
