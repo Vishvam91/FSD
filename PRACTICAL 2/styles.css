@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    color: #333;
+}
+
+input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+button {
+    padding: 8px 15px;
+    background: linear-gradient(45deg, #d299c2, #fef9d7);
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #fef9d7, #d299c2);
+}
+
+p {
+    margin-top: 20px;
+    font-size: 18px;
+}
