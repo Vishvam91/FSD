@@ -14,6 +14,7 @@ const Practical5 = () => {
     return parseFloat(n.toPrecision(12)).toString();
   };
 
+  
   const handleNumber = (digit) => {
     if (display === "Error") {
       setDisplay(digit);
