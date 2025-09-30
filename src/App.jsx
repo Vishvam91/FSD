@@ -9,7 +9,7 @@ import Greet from './components/greetings'
 import Practical4 from './components/Practical4'
 import Practical5 from './components/Practical5'
 import Practical6 from './components/Practical6'
-import Practical17 from './components/Practical7'
+import Practical7 from './components/Practical7'
 // import Welcome from './components/welcome'
 
 
