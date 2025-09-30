@@ -8,6 +8,7 @@ import { Component } from 'react'
 import Greet from './components/greetings'
 import Practical4 from './components/Practical4'
 import Practical5 from './components/Practical5'
+import Practical6 from './components/Practical6'
 // import Welcome from './components/welcome'
 
 
@@ -20,7 +21,8 @@ function App() {
       {/* <Practical3 /> */}
       {/* <Greet /> */}
       {/* <Practical4 /> */}
-      <Practical5 />
+      {/* <Practical5 /> */}
+      <Practical6 />
     </>
   )
 }
