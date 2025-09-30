@@ -7,6 +7,7 @@ import Practical3 from './components/Practical3'
 import { Component } from 'react'
 import Greet from './components/greetings'
 import Practical4 from './components/Practical4'
+import Practical5 from './components/Practical5'
 // import Welcome from './components/welcome'
 
 
@@ -15,9 +16,10 @@ function App() {
 
   return (
     <>
-      <Practical3 />
+      {/* <Practical3 /> */}
       {/* <Greet /> */}
       {/* <Practical4 /> */}
+      <Practical5 />
     </>
   )
 }

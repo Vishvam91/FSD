@@ -1,5 +1,5 @@
 /* HookComponent.css */
-
+/*
 div {
   max-width: 400px;
   margin: 40px auto;
@@ -37,30 +37,29 @@ button:hover {
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
-/* Different colors for each button */
 button:nth-of-type(1) {
-  background: #ff6b6b; /* Increment - red */
+  background: #ff6b6b; 
 }
 button:nth-of-type(1):hover {
   background: #ff4c4c;
 }
 
 button:nth-of-type(2) {
-  background: #1dd1a1; /* Decrement - teal */
+  background: #1dd1a1; 
 }
 button:nth-of-type(2):hover {
   background: #10ac84;
 }
 
 button:nth-of-type(3) {
-  background: #54a0ff; /* Reset - blue */
+  background: #54a0ff; 
 }
 button:nth-of-type(3):hover {
   background: #2e86de;
 }
 
 button:nth-of-type(4) {
-  background: #f368e0; /* Increment-5 - pink/purple */
+  background: #f368e0; 
 }
 button:nth-of-type(4):hover {
   background: #d63094;
@@ -92,3 +91,4 @@ h3 {
   margin: 10px 0 5px;
   text-shadow: 0 0 3px #dda0dd;
 }
+*/
