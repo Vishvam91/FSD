@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Practical17.css";
+import "./Practical7.css";
 
-const Practical17 = () => {
+const Practical7 = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
@@ -43,4 +43,4 @@ const Practical17 = () => {
   );
 };
 
-export default Practical17;
+export default Practical7;

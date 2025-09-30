@@ -24,7 +24,7 @@ function App() {
       {/* <Practical4 /> */}
       {/* <Practical5 /> */}
       {/* <Practical6 /> */}
-      <Practical17 />
+      <Practical7 />
     </>
   )
 }
