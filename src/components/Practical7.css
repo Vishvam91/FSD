@@ -2,29 +2,30 @@
   display: flex;
   height: 100vh;
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #f3e5f5;
 }
 
 .menu-toggle {
   position: fixed;
-  top: 10px;
-  left: 10px;
+  top: 15px;
+  left: 15px;
   font-size: 24px;
-  background-color: #444;
+  background-color: #7b1fa2;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 12px;
   cursor: pointer;
   z-index: 1000;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   text-align: center;
-  line-height: 40px;
+  line-height: 45px;
+  border-radius: 8px;
 }
 
 .sidebar {
   width: 250px;
-  background-color: #333;
+  background-color: #6a1b9a;
   color: white;
   padding: 20px 0;
   position: fixed;
@@ -42,11 +43,12 @@
 }
 
 .sidebar h2 {
-  margin: 0 0 20px 0;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #555;
+  margin: 0 0 25px 0;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #8e24aa;
   text-align: center;
   width: 100%;
+  font-size: 24px;
 }
 
 .sidebar ul {
@@ -56,44 +58,50 @@
 }
 
 .sidebar li {
-  padding: 15px 20px;
+  padding: 18px 25px;
   cursor: pointer;
   text-align: center;
   width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s;
 }
 
 .sidebar li:hover {
-  background-color: #444;
+  background-color: #8e24aa;
 }
 
 .main-content {
   margin-left: 0;
-  padding: 20px;
+  padding: 25px;
   flex-grow: 1;
   transition: margin-left 0.3s ease;
-  margin-left: 250px; /* Default margin to account for sidebar */
+  margin-left: 250px;
 }
 
 .sidebar.open + .main-content {
-  margin-left: 250px; /* Ensure consistent margin when open */
+  margin-left: 250px;
 }
 
 header {
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 2em;
-  color: #333;
+  margin-bottom: 25px;
+  font-size: 2.2em;
+  color: #4a148c;
+  font-weight: bold;
 }
 
 section {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
+  background-color: #e1bee7;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(106, 27, 154, 0.2);
+  max-width: 650px;
   margin: 0 auto;
   text-align: center;
-  color: #666;
+  color: #4a148c;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 @media (max-width: 768px) {

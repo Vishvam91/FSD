@@ -1,41 +1,54 @@
+body {
+  background-color: #e8f5e8;
+  margin: 0;
+  padding: 0;
+}
+
 .todo-container {
-  max-width: 400px;
+  max-width: 450px;
   margin: 50px auto;
   font-family: Arial, sans-serif;
   text-align: center;
+  background-color: #2e7d32;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(46, 125, 50, 0.3);
 }
 
 h1 {
-  color: #333;
-  margin-bottom: 20px;
+  color: white;
+  margin-bottom: 25px;
+  font-size: 28px;
 }
 
 .todo-form {
   display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 12px;
+  margin-bottom: 25px;
 }
 
 .todo-input {
   flex: 1;
-  padding: 8px;
+  padding: 12px;
   font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 2px solid #66bb6a;
+  border-radius: 8px;
+  background-color: white;
 }
 
 .todo-add {
-  padding: 8px 16px;
+  padding: 12px 20px;
   font-size: 16px;
-  background-color: #4CAF50;
+  background-color: #66bb6a;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .todo-add:hover {
-  background-color: #45a049;
+  background-color: #4caf50;
 }
 
 .todo-list {
@@ -47,31 +60,39 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  margin-bottom: 10px;
-  background-color: #f9f9f9;
-  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 12px;
+  background-color: #a5d6a7;
+  border-radius: 8px;
+  color: #1b5e20;
+}
+
+.todo-list li.completed {
+  background-color: #c8e6c9;
 }
 
 .todo-list li.completed span {
   text-decoration: line-through;
-  color: #888;
+  color: #4e342e;
 }
 
 .todo-list li span {
   flex: 1;
   cursor: pointer;
+  font-weight: 500;
+  text-align: left;
 }
 
 .todo-delete {
-  padding: 5px 10px;
-  background-color: #f44336;
+  padding: 8px 12px;
+  background-color: #d32f2f;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .todo-delete:hover {
-  background-color: #da190b;
+  background-color: #c62828;
 }

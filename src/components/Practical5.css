@@ -5,58 +5,60 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f0f0f0;
+  background-color: #e3f2fd;
 }
 
-
 .calculator {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #1976d2;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(25, 118, 210, 0.3);
   width: 300px;
 }
 
 .display {
-  background-color: #e0e0e0;
-  padding: 10px;
+  background-color: #0d47a1;
+  padding: 15px;
   text-align: right;
-  font-size: 24px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  min-height: 40px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  min-height: 50px;
   overflow-x: auto;
   white-space: nowrap;
 }
 
 .prev-display {
   font-size: 14px;
-  color: #666;
+  color: #90caf9;
   margin-bottom: 5px;
 }
 
 .current-display {
-  font-size: 24px;
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
 }
 
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
+  gap: 8px;
 }
 
 button {
-  padding: 15px;
+  padding: 18px;
   font-size: 18px;
   border: none;
-  border-radius: 5px;
-  background-color: #f0f0f0;
+  border-radius: 8px;
+  background-color: #42a5f5;
+  color: white;
   cursor: pointer;
   transition: background-color 0.2s, transform 0.1s;
+  font-weight: 500;
 }
 
 button:hover {
-  background-color: #e0e0e0;
+  background-color: #2196f3;
 }
 
 button:active {
@@ -64,16 +66,15 @@ button:active {
 }
 
 .operator {
-  background-color: #ff9500;
+  background-color: #ff5722;
   color: white;
 }
 
 .operator:hover {
-  background-color: #e68a00;
+  background-color: #e64a19;
 }
 
 .zero {
   grid-column: span 2;
-  text-align: left;
-  padding-left: 20px;
+  text-align: center;
 }
